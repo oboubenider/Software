@@ -1,0 +1,22 @@
+<mat-card-header>
+    <mat-card-title>Assign User Role</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+    <form class="example-form" [formGroup]="formGroup">
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Role" formControlName="role" name="role">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</mat-card-content>
+<mat-card-actions>
+    <button mat-raised-button (click)="save()"   color="primary">Save</button>
+    <button mat-raised-button (click)="close()" color="primary">Cancel</button>
+</mat-card-actions>
+

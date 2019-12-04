@@ -1,0 +1,25 @@
+<!-- <app-registration></app-registration> -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+      MyadminPortal
+      <span class="example-fill-remaining-space"></span>
+      <div>
+          <a mat-button routerLink="/users">Users</a>
+          <a mat-button routerLink="/roles">Roles</a>
+          <!-- <a mat-button routerLink="/userroles">User Roles</a> -->
+        </div>
+        <mat-divider [inset]="true"></mat-divider>
+        <div>
+        <a mat-button routerLink="/home">Home</a>
+        <!-- <a mat-button routerLink="/about">About</a>
+        <a mat-button routerLink="/contact">Contact</a>   -->
+      </div>
+      <mat-divider [inset]="true"></mat-divider>
+      <div>
+        <a mat-button routerLink="/register">Register</a>
+        <a mat-button routerLink="/login">Login</a>  
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

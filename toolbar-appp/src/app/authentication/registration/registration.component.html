@@ -1,0 +1,64 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Registration</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="formGroup">
+            <table class="example-full-width" cellspacing="0">
+                <!-- <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Id" name="id" formControlName="id">
+                        </mat-form-field>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Username" name="username" formControlName="username">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Friendly Name" name="friendlyname" formControlName="friendlyname">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Password" type="password" name="password" formControlName="password">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Repeat Password" type="password" name="repeatpassword" formControlName="repeatpassword" >
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Email" formControlName="email">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-slide-toggle>zDomain User</mat-slide-toggle>
+                        </mat-form-field>
+                    </td>
+                </tr> -->
+            </table>
+        </form>
+        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button [disabled]="!formGroup.valid" (click)="register()" color="primary">REGISTER</button>
+    </mat-card-actions>
+</mat-card>
